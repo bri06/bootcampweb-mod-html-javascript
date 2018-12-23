@@ -514,13 +514,19 @@ input.error[required], textarea.error {
   color: #CC0000;
 }
 
-.hiddenError {
+.successrMsg {
+  text-align: left;
+  color: rgb(10, 219, 38);
+}
+
+.hiddenError, .hiddenSuccess {
   display: none;
 }
 
-.showError {
+.showError, .showSuccess {
   display: block;
 }
+
 
 .countCarac {
   text-align: right;

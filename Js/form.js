@@ -1,8 +1,9 @@
 export function formValidator() {
-  const MAX = 4;
+  const MAX = 150;
   const form = document.querySelector('#contact-form');
   const others = document.querySelector('#others');
   const errorContainer = document.querySelector('#error');
+  const successContainer = document.querySelector('#success');
   const defaultValidator = target => target.value.trim().length !== 0 && target.checkValidity();
   const textareaValidator = (target, MAX) => {
     const numWords = target.value.split(' ').filter(word => word).length;
@@ -15,7 +16,7 @@ export function formValidator() {
     return document.querySelector('#aditionalText').className = 'hiddenLabel';
   }, false);
 
-  const errorTemplate = (message) => `<p>${message}</p>`;
+  const messageTemplate = (message) => `<p>${message}</p>`;
   const counterTemplate = (count, MAX) => `<span>${count} of ${MAX} characters</span>`;
 
   const inputs = document.querySelectorAll('.contact-input input');
@@ -44,14 +45,19 @@ export function formValidator() {
     if (!textareaValidator(e.target.textarea, MAX)) {
       return errorHandling(errorContainer, e.target.textarea, `Message must have less than ${MAX} characters`);
     }
-    alert('Success')
+    return successHandling(successContainer, 'Your data has been sent.');
   }
 
   function errorHandling (errorContainer, element, message) {
     errorContainer.classList.add('showError');
     element.classList.add('error');
-    errorContainer.innerHTML = errorTemplate(message);
+    errorContainer.innerHTML = messageTemplate(message);
     return element.focus();
+  }
+
+  function successHandling (successContainer, message) {
+    successContainer.classList.add('showSuccess');
+    return successContainer.innerHTML = messageTemplate(message);
   }
 
   form.addEventListener("submit", send);
