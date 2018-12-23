@@ -1,10 +1,10 @@
 export function formValidator() {
-  const MAX = 150;
+  const MAX = 4;
   const form = document.querySelector('#contact-form');
   const others = document.querySelector('#others');
   const errorContainer = document.querySelector('#error');
   const defaultValidator = target => target.value.trim().length !== 0 && target.checkValidity();
-  const textareaValidator = (target, MAX = MAX) => {
+  const textareaValidator = (target, MAX) => {
     const numWords = target.value.split(' ').filter(word => word).length;
     return numWords <= MAX;
   }
@@ -41,10 +41,10 @@ export function formValidator() {
     if (!defaultValidator(e.target.phone)) {
       return errorHandling(errorContainer, e.target.phone, 'Phone is required. Please fill with correct format (+34 612345678)');
     }
-    if (!textareaValidator(e.target.textarea)) {
+    if (!textareaValidator(e.target.textarea, MAX)) {
       return errorHandling(errorContainer, e.target.textarea, `Message must have less than ${MAX} characters`);
     }
-    alert('enviado')
+    alert('Success')
   }
 
   function errorHandling (errorContainer, element, message) {
