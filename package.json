@@ -1,0 +1,24 @@
+{
+  "name": "bootcampweb-mod-html-javascript",
+  "version": "1.0.0",
+  "description": "Realizacion de la primera práctica de keepCoding - html css y javascript basico.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bri06/bootcampweb-mod-html-javascript.git"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bri06/bootcampweb-mod-html-javascript/issues"
+  },
+  "homepage": "https://github.com/bri06/bootcampweb-mod-html-javascript#readme"
+}
