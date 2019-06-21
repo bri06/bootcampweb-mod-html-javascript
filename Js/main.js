@@ -8,4 +8,4 @@ function app() {
   scrollSpy();
 }
 
-document.addEventListener('DOMContentLoaded', app)
+document.addEventListener('DOMContentLoaded', app);

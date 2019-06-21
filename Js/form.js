@@ -8,8 +8,8 @@ export function formValidator() {
   const textareaValidator = (target, MAX) => {
     const numWords = target.value.split(' ').filter(word => word).length;
     return numWords <= MAX;
-  }
-  others.addEventListener("change", function () {
+  };
+  others.addEventListener('change', function () {
     if (others.checked) {
       return document.querySelector('#aditionalText').className = 'showLabel';
     }
@@ -27,7 +27,7 @@ export function formValidator() {
     if (input.name === 'textarea') {
       const count = e.target.value.split(' ').filter(word => word).length;
       document.querySelector('.countCarac').innerHTML = counterTemplate(count, MAX);
-    } 
+    }
   }));
 
   const send = (e) => {
@@ -46,7 +46,7 @@ export function formValidator() {
       return errorHandling(errorContainer, e.target.textarea, `Message must have less than ${MAX} characters`);
     }
     return successHandling(successContainer, 'Your data has been sent.');
-  }
+  };
 
   function errorHandling (errorContainer, element, message) {
     errorContainer.classList.add('showError');
@@ -60,7 +60,7 @@ export function formValidator() {
     return successContainer.innerHTML = messageTemplate(message);
   }
 
-  form.addEventListener("submit", send);
+  form.addEventListener('submit', send);
 
 
 

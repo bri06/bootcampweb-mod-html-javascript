@@ -7,11 +7,11 @@ export function navBar() {
   btnClose.addEventListener('click', closeNav);
 
   function openNav() {
-    document.querySelector(".sidenav").style.width = "250px";
+    document.querySelector('.sidenav').style.width = '250px';
   }
 
   function closeNav() {
-    document.querySelector(".sidenav").style.width = "0";
+    document.querySelector('.sidenav').style.width = '0';
   }
 
 }
