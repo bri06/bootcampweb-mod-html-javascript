@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="keywords" content="web,desarrollador,frontend,curriculum">
   <meta name="author" content="Briam Martinez">
+  <meta name="descriptor" content="Portfolio de Briam Martinez Escobar, desarrollador frontend con conocimientos de webcomponents, Polymer, LitElement, React, Vue, Node">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bevan|Montserrat|Open+Sans" rel="stylesheet">
@@ -49,9 +50,9 @@
             <img itemprop="image" class="profile-picture" src="./assets/me.png" width="150" height="150" alt="profile picture">
           </figure>
           <div class="info-whoiam">
-            <p itemprop="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptates, adipisci quidem, molestias
-              minus amet error nesciunt quis laudantium labore iusto explicabo esse porro. Cumque facilis quasi illum
-              magni tempore.</p>
+            <p itemprop="description">Soy un desarrollador frontend, me encanta todo lo relacionado con Javascript vanilla y el desarrollo web, ya sea en el front o en el back con node y express.
+              Además he trabajado con web components utilizando polymer y lit-Element, haciendo unit testing con Mocha Chai y Sinon y también he utilizado metodologías agile mediante scrum.
+              Soy una persona muy autodidacta y me gusta estar a la última en cuanto a librerías o frameworks frontend se refiere, haciendo cursos de react, vue, html, css3, Sass, Mongodb, webpack, entre otros.</p>
           </div>
         </div>
       </header>
@@ -59,29 +60,29 @@
     <section id="studies">
       <h2>EDUCATION</h2>
       <div class="timeline-education">
-        <div class="card left">
+        <div itemscope itemtype="https://schema.org/Course" class="card left">
             <div class="content">
-              <h3>Colegio San José de Begoña</h3>
+              <h3 itemprop="provider">Colegio San José de Begoña</h3>
               <em>2011</em>
             </div>
         </div>
-        <div class="card right">
+        <div itemscope itemtype="https://schema.org/Course" class="card right">
           <div class="content">
-            <h3>Universidad Politécnica de Madrid</h3>
+            <h3 itemprop="provider">Universidad Politécnica de Madrid</h3>
             <em>2011 - 2016</em>
           </div>
         </div>
-        <div class="card left">
+        <div itemscope itemtype="https://schema.org/Course" class="card left">
           <div class="content">
-            <h3>Politecnico di Milano</h3>
+            <h3 itemprop="provider">Politecnico di Milano</h3>
             <p>2016 - 2017</p>
           </div>
         </div>
-        <div class="card right">
+        <div itemscope itemtype="https://schema.org/Course" class="card right">
           <div class="content">
-              <h3>KeepCoding</h3>
+              <h3 itemprop="provider">KeepCoding</h3>
               <p>2018 - 2019</p>
-              <h4>Bootcamp - Web Development</h4>
+              <h4 itemprop="name">Bootcamp - Web Development</h4>
               <ul>
                 <li>HTML5, CSS3 y JavaScript</li>
                 <li>Frontend Avanzado: Webpack y SASS</li>
@@ -98,9 +99,6 @@
               </ul>
           </div>
         </div>
-      </div>
-      <div class="courses">
-
       </div>
     </section>
     <section id="experience">
@@ -334,7 +332,7 @@
         <a href="https://instagram.com/briam2906" class="social-link instagram"></a>
       </div>
     </div>
-    <address>Designed by <span itemprop="copyrightHolder">Martínez Escobar</span></address>
+    <p>Designed by <span itemprop="copyrightHolder">Martínez Escobar</span></p>
   </footer>
 
 </body>

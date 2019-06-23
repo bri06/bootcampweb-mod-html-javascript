@@ -557,7 +557,7 @@ footer{
   align-items: center;
 }
 
-footer > address {
+footer > p {
   text-align: center;
   color: var(--emphasis-color);
   padding-bottom: 15px;
