@@ -40,3 +40,16 @@ En la zona de formulario, se deberá implementar mínimo:
 - Un número de contacto, validando que el número es correcto
 - Un campo de textarea, con un máximo de 150 palabras (no caracteres).
 - Un botón de envío.
+
+
+# Extra: práctica Módulo SEO:
+
+## Enunciado:
+Optimización SEO On Page que hemos visto durante las clases sobre vuestro CV.
+Titles, description, canonicals, og, tw cards, breadcrumbs (schema.org), wpo,jerarquía h1, h2, h3, arquitectura de la información, robots.txt, duplicidad decontenido...
+
+## Consideraciones:
+- Se han introducido metadatos en la cabecera, que le indican al navegador unas palabras clave, el autor y una breve descripción.
+- Además se ha utilizado Open One Graph, las propiedades title, image, type y description para ayudar a identificar los elementos principales del artículo
+- En mi caso se ha dividido el documento en secciones con un encabezado en cada sección.
+- Por último se han introducido datos estructurados de tipo `Person`, `Course`, `ImageObject` y `Organization`
