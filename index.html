@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="web,desarrollador,frontend,curriculum">
+  <meta name="author" content="Briam Martinez">
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bevan|Montserrat|Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="./styles/reset.css">
@@ -35,23 +38,20 @@
     </ul>
   </nav>
   <main>
-    <section id="whoIam">
+    <section id="whoIam" itemscope itemtype="https://schema.org/Person">
       <header>
         <div class="whoiam-header">
           <h2>INTRO</h2>
           <p>What I am all about</p>
         </div>
         <div class="whoiam-container">
-          <figure>
-            <img class="profile-picture" src="./assets/me.png" width="150" height="150" alt="profile picture">
+          <figure itemscope itemtype="https://schema.org/ImageObject">
+            <img itemprop="image" class="profile-picture" src="./assets/me.png" width="150" height="150" alt="profile picture">
           </figure>
           <div class="info-whoiam">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptates, adipisci quidem, molestias
+            <p itemprop="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptates, adipisci quidem, molestias
               minus amet error nesciunt quis laudantium labore iusto explicabo esse porro. Cumque facilis quasi illum
               magni tempore.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore voluptates illo porro
-              enim, repellendus eligendi aliquid, dolores cupiditate voluptas assumenda expedita iure cum dolorum
-              quod dolorem accusantium vel sequi?</p>
           </div>
         </div>
       </header>
@@ -63,7 +63,6 @@
             <div class="content">
               <h3>Colegio San José de Begoña</h3>
               <em>2011</em>
-                
             </div>
         </div>
         <div class="card right">
@@ -106,110 +105,89 @@
     </section>
     <section id="experience">
       <h2>EXPERIENCE</h2>
-      <div class="timeline-jobs">
+      <div itemscope itemtype="http://schema.org/Organization" class="timeline-jobs">
         <div class="card-job">
           <div class="info-job">
-            <h3>Promotor</h3>
-            <p>Coty</p>
+            <h3 itemprop="description">Promotor</h3>
+            <p itemprop="name">Coty</p>
             <address>jul. de 2011 - jul. de 2011</address>
           </div>
           <div class="desc-job">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat rerum quae pariatur doloremque
+            <p itemprop="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat rerum quae pariatur doloremque
               eligendi deleniti nesciunt nisi tenetur blanditiis in, repellendus itaque amet id necessitatibus quam
               similique repellat quo suscipit!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus laboriosam impedit unde dolore,
-              beatae commodi enim atque dolor, dignissimos facere velit nisi similique ratione totam officia esse,
-              aspernatur ea sunt!</p>
           </div>
         </div>
         <div class="card-job">
           <div class="info-job">
-            <h3>Promotor</h3>
-            <p>L'Oréal</p>
+            <h3 itemprop="description">Promotor</h3>
+            <p itemprop="name">L'Oréal</p>
             <address>dic de 2013 - ene de 2014</address>
           </div>
           <div class="desc-job">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi dolores molestiae optio laborum quam
+            <p itemprop="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi dolores molestiae optio laborum quam
               enim blanditiis? Neque esse provident aliquid deleniti, recusandae velit suscipit quos, qui modi
               consequuntur inventore quis.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga iure, nesciunt totam voluptatem modi
-              excepturi, assumenda, deserunt repellendus odio explicabo sint doloremque quia atque a sequi harum
-              consectetur sunt rerum!</p>
           </div>
         </div>
         <div class="card-job">
           <div class="info-job">
-            <h3>Promotor</h3>
-            <p>Loewe</p>
+            <h3 itemprop="description">Promotor</h3>
+            <p itemprop="name">Loewe</p>
             <address>dic. de 2015 - ene de 2016 </address>
           </div>
           <div class="desc-job">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, quo eaque fuga qui consectetur
+            <p itemprop="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, quo eaque fuga qui consectetur
               pariatur eos excepturi unde recusandae illo praesentium saepe animi aliquid id repellendus, rem, quidem
               suscipit? Sed!</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, maiores perferendis autem
-              nesciunt eos tempora sequi fugit excepturi delectus quia at animi recusandae praesentium eligendi,
-              officiis fuga ab blanditiis quo?</p>
           </div>
         </div>
         <div class="card-job">
           <div class="info-job">
-            <h3>Oficial de mesa</h3>
-            <p>Federacion de Baloncesto de Madrid</p>
+            <h3 itemprop="description">Oficial de mesa</h3>
+            <p itemprop="name">Federacion de Baloncesto de Madrid</p>
             <address>sept de 2009 - jun de 2016 </address>
           </div>
           <div class="desc-job">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nihil. Impedit dolorem aliquid
+            <p itemprop="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nihil. Impedit dolorem aliquid
               beatae exercitationem rem pariatur eos incidunt dolore temporibus. Consequuntur quam, dicta eum
               deleniti a alias ipsam doloribus.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt odio ducimus, quia iste perferendis
-              aliquid tenetur consectetur molestiae. Qui vero rerum mollitia corrupti repellat officiis recusandae
-              reprehenderit in distinctio unde.</p>
           </div>
         </div>
         <div class="card-job">
           <div class="info-job">
-            <h3>Basket coach</h3>
-            <p>Federacion de Baloncesto de Madrid</p>
+            <h3 itemprop="description">Basket coach</h3>
+            <p itemprop="name">Federacion de Baloncesto de Madrid</p>
             <address>jul. de 2018 - actualidad</address>
           </div>
           <div class="desc-job">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus velit dolor, quasi asperiores
+            <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus velit dolor, quasi asperiores
               aliquam quas commodi odit expedita quam temporibus animi est quo? Minima, impedit? Dolorem maxime
               veniam tenetur omnis!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati laborum assumenda sed nisi nam
-              quos ut, eligendi cumque ex, optio, ullam nemo itaque laboriosam officia pariatur neque quaerat! Hic,
-              error?</p>
           </div>
         </div>
         <div class="card-job">
           <div class="info-job">
-            <h3>Intern student</h3>
-            <p>SATEC</p>
+            <h3 itemprop="description">Intern student</h3>
+            <p itemprop="name">SATEC</p>
             <address>sept. de 2017 - mayo de 2018</address>
           </div>
           <div class="desc-job">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dolore nemo impedit, voluptatem
+            <p itemprop="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dolore nemo impedit, voluptatem
               accusamus repellendus voluptatibus reiciendis fugit veniam temporibus porro quibusdam repudiandae
               commodi rem atque laudantium, id minima blanditiis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas quo magni nobis earum, adipisci
-              cum, assumenda, qui doloremque nostrum dolorum perferendis consectetur? Ducimus non maiores sit
-              nesciunt ratione harum!</p>
           </div>
         </div>
         <div class="card-job">
           <div class="info-job">
-            <h3>Software depveloper</h3>
-            <p>Sopra Steria</p>
+            <h3 itemprop="description">Software depveloper</h3>
+            <p itemprop="name">Sopra Steria</p>
             <address>jul. de 2018 - actualidad</address>
           </div>
           <div class="desc-job">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nemo fuga laudantium, quo cum
+            <p itemprop="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nemo fuga laudantium, quo cum
               accusantium aut, quia asperiores ullam perferendis maxime. Error fugiat nostrum labore provident maxime
               quos praesentium velit!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni velit sit atque culpa officiis pariatur
-              incidunt provident voluptatibus possimus molestias excepturi laboriosam deleniti architecto fugiat
-              illum, impedit perspiciatis aliquid inventore.</p>
           </div>
         </div>
       </div>
@@ -356,7 +334,7 @@
         <a href="https://instagram.com/briam2906" class="social-link instagram"></a>
       </div>
     </div>
-    <address>Designed by &copy; Briam Martínez Escobar </address>
+    <address>Designed by <span itemprop="copyrightHolder">Martínez Escobar</span></address>
   </footer>
 
 </body>
