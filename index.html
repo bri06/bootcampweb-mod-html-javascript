@@ -9,6 +9,11 @@
   <meta name="author" content="Briam Martinez">
   <meta name="descriptor" content="Portfolio de Briam Martinez Escobar, desarrollador frontend con conocimientos de webcomponents, Polymer, LitElement, React, Vue, Node">
 
+  <meta property="og:title" content="Portfolio Briam" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="./assets/me.png" />
+  <meta property="og:description" content="Portfolio de Briam Martinez Escobar, desarrollador frontend con conocimientos de webcomponents, Polymer, LitElement, React, Vue, Node" />
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bevan|Montserrat|Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="./styles/reset.css">
@@ -63,26 +68,33 @@
         <div itemscope itemtype="https://schema.org/Course" class="card left">
             <div class="content">
               <h3 itemprop="provider">Colegio San José de Begoña</h3>
-              <em>2011</em>
+              <em itemprop="temporalCoverage">2011</em>
+              <h4 itemprop="name">Bachillerato</h4>
+              <p itemprop="description">Graduado escolar</p>
             </div>
         </div>
         <div itemscope itemtype="https://schema.org/Course" class="card right">
           <div class="content">
             <h3 itemprop="provider">Universidad Politécnica de Madrid</h3>
-            <em>2011 - 2016</em>
+            <em itemprop="temporalCoverage">2011 - 2016</em>
+            <h4 itemprop="name">Grado en Ingeniería de Sonido e Imagen. Ingeniería de Telecomunicaciones</h4>
+            <p itemprop="description">Grado universitario</p>
           </div>
         </div>
         <div itemscope itemtype="https://schema.org/Course" class="card left">
           <div class="content">
             <h3 itemprop="provider">Politecnico di Milano</h3>
-            <p>2016 - 2017</p>
+            <p itemprop="temporalCoverage">2016 - 2017</p>
+            <h4 itemprop="name">Corso di laurea magistrale</h4>
+            <p itemprop="description">Erasmus</p>
           </div>
         </div>
         <div itemscope itemtype="https://schema.org/Course" class="card right">
           <div class="content">
               <h3 itemprop="provider">KeepCoding</h3>
-              <p>2018 - 2019</p>
+              <p itemprop="temporalCoverage">2018 - 2019</p>
               <h4 itemprop="name">Bootcamp - Web Development</h4>
+              <p itemprop="description">Master desarrollo web</p>
               <ul>
                 <li>HTML5, CSS3 y JavaScript</li>
                 <li>Frontend Avanzado: Webpack y SASS</li>
